@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Matrimony</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">💻 DevMatrimony</h1>
+                <div class="nav-links">
+                    <button id="lang-toggle" class="btn-link">தமிழ்</button>
+                    <a href="#matches" data-i18n="nav.matches">Matches</a>
+                    <a href="#chat" data-i18n="nav.chat">Chat</a>
+                    <a href="#profile" data-i18n="nav.profile">Profile</a>
+                    <button id="logout-btn" class="btn-secondary" data-i18n="nav.logout">Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Content will be dynamically loaded -->
+        </main>
+
+        <!-- AI Chatbot Widget -->
+        <div id="chatbot-widget" class="chatbot-closed">
+            <button id="chatbot-toggle" class="chatbot-btn">
+                <span class="bot-icon">🤖</span>
+            </button>
+            <div id="chatbot-panel" class="chatbot-panel">
+                <div class="chatbot-header">
+                    <h3 data-i18n="chatbot.title">AI Assistant</h3>
+                    <button id="chatbot-close">✕</button>
+                </div>
+                <div id="chatbot-messages" class="chatbot-messages"></div>
+                <div class="chatbot-input">
+                    <input type="text" id="chatbot-input" placeholder="Ask me anything...">
+                    <button id="chatbot-send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+    
+    <script src="js/i18n.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html> 
