@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 CORS(app) 
 
-# Initialize Firebase
+# Initialize Firebase 
 cred = credentials.Certificate(app.config['FIREBASE_CREDENTIALS'])
 firebase_admin.initialize_app(cred)
 db = firestore.client()
@@ -36,6 +36,7 @@ def health_check():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000) 
+
 
 
 
