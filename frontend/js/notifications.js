@@ -1,7 +1,7 @@
 const messaging = firebase.messaging();
 
 async function requestNotificationPermission() {
-    try {
+    try { 
         const permission = await Notification.requestPermission();
         
         if (permission === 'granted') {
