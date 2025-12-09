@@ -1,6 +1,6 @@
  
 const translations = {
-    en: {
+    en: { 
         nav: {
             matches: 'Matches',
             chat: 'Chat',
