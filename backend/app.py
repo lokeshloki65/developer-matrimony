@@ -3,7 +3,7 @@ from flask_cors import CORS
 import firebase_admin
 from firebase_admin import credentials, firestore
 import cloudinary  
-from config import Config
+from config import Config 
  
 app = Flask(__name__)  
 app.config.from_object(Config)
